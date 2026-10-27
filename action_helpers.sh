@@ -29,7 +29,7 @@ function lunarg_fetch_sdk_config() {
 
 function resolve_vulkan_sdk_environment() {
   local query_version=$1
-  local config_file= $(echo "$2" | sed '/\\/\//g')
+  local config_file= $(echo "$2" | sed 's/\\/\//g')
   local sdk_components=$(echo "$3" | xargs echo | sed -e 's@[,; ]\+@;@g')
   local base_dir=$PWD
   local platform=unknown
