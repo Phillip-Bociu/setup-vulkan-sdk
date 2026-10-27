@@ -1,4 +1,4 @@
-name: 'Setup Vulkan SDK'
+name: 'Setup Vulkan SDK - Kamski'
 description: 'Automatically builds Vulkan SDK components from source.'
 branding:
   icon: 'play'
